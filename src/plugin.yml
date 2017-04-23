@@ -1,0 +1,23 @@
+name: LunikerDynamicWorld
+version: 1.0
+author: 2sk
+website: luniker.net
+
+main: net.luniker.lunikerdynamicworld.LunikerDynamicWorld
+database: false
+softdepend: [WorldEdit]
+
+commands:
+  ldwfactory:
+    description: Make, edit and view Luniker Dynamic World Objects.
+    usage: /ldwfactory [new|edit|list]
+    permission: lunikerdynamicworld.ldwfactory
+
+permissions:
+  lunikerdynamicworld.*:
+    description: Gives access to all Luniker Dynamic World commands.
+    children:
+      lunikerdynamicworld.ldwfactory: true
+  lunikerdynamicworld.ldwfactory:
+    description: Allows you to make, edit and view Luniker Dynamic World Objects.
+    default: true
