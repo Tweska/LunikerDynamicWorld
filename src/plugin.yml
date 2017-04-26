@@ -8,16 +8,16 @@ database: false
 softdepend: [WorldEdit]
 
 commands:
-  ldwfactory:
-    description: Make, edit and view Luniker Dynamic World Objects.
-    usage: /ldwfactory [new|edit|list]
-    permission: lunikerdynamicworld.ldwfactory
+  dynamics:
+    description: Enter the Dynamics Factory.
+    usage: /dynamics
+    permission: lunikerdynamicworld.dynamics
 
 permissions:
   lunikerdynamicworld.*:
     description: Gives access to all Luniker Dynamic World commands.
     children:
-      lunikerdynamicworld.ldwfactory: true
-  lunikerdynamicworld.ldwfactory:
+      lunikerdynamicworld.dynamics: true
+  lunikerdynamicworld.dynamics:
     description: Allows you to make, edit and view Luniker Dynamic World Objects.
     default: true

@@ -2,7 +2,7 @@ package net.luniker.lunikerdynamicworld;
 
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import net.luniker.lunikerdynamicworld.Commands.CommandModule;
-import net.luniker.lunikerdynamicworld.Commands.LdwFactoryCommand;
+import net.luniker.lunikerdynamicworld.Commands.DynamicsCommand;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -39,6 +39,6 @@ public class LunikerDynamicWorld extends JavaPlugin {
     }
 
     public void registerCommands() {
-        new LdwFactoryCommand();
+        new DynamicsCommand();
     }
 }

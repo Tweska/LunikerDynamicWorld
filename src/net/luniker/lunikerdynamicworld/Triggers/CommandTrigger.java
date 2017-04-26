@@ -11,11 +11,11 @@ import org.bukkit.entity.Player;
 public class CommandTrigger extends Trigger implements CommandExecutor {
     String cmd;
 
-    CommandTrigger(String name, Action action) {
+    public CommandTrigger(String name, Action action) {
         this(name, action, name);
     }
 
-    CommandTrigger(String name, Action action, String cmd) {
+    public CommandTrigger(String name, Action action, String cmd) {
         super(name, action);
         this.cmd = cmd;
         Bukkit.getPluginCommand("cmdtrigger").setExecutor(this);

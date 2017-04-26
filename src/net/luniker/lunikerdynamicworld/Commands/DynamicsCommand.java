@@ -6,9 +6,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-public class LdwFactoryCommand extends CommandModule {
-    public LdwFactoryCommand() {
-        super("ldwfactory", 1, 2, true);
+public class DynamicsCommand extends CommandModule {
+    public DynamicsCommand() {
+        super("dynamics", 0, 0, true);
     }
 
     /**
@@ -22,7 +22,8 @@ public class LdwFactoryCommand extends CommandModule {
     }
 
     /**
-     * Get the players current DynamicsFactory.
+     * Get the players current DynamicsFactory. If there is no DynamicsFactory associated with the player, a new one
+     * will be made.
      * @return The DynamicsFactory.
      */
     private DynamicsFactory getFactory(Player player) {
